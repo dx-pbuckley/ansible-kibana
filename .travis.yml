@@ -7,6 +7,7 @@ before_install:
 install:
 - pip install molecule==1.25.0
 - pip install docker
+- pip install ansible-lint==3.4.15
 script:
 - molecule test --driver docker
 notifications:
